@@ -14,7 +14,8 @@ public class DcController {
     private static final Logger log = LoggerFactory.getLogger(DcController.class);
 
     @GetMapping("/dc")
-    public String dc() {
+    public String dc() throws InterruptedException {
+        Thread.sleep(5000);
         String services = "Services: " + discoveryClient.getServices();
         log.info(services);
         return services;
