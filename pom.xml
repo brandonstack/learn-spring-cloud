@@ -14,6 +14,8 @@
         <module>config-client</module>
         <module>hystrix-dashboard</module>
         <module>api-gateway</module>
+        <module>trace</module>
+        <module>trace-2</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
